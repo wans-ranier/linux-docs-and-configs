@@ -1,9 +1,9 @@
 # linux-docs-and-configs
- Esse projeto é minha documentação sobre configurações, comandos de terminal, tutorias e entre outra coisas que venho estudando sobre o ambiente linux
+ Esse projeto é minha documentação sobre configurações, comandos de terminal, tutorias e entre outra coisas que venho estudando sobre o ambiente linux.
 
 ## 📋 Ambiente
 
-- **SO:** Pop!_OS
+- **SO:** Pop!_OS 
 - **CPU:** Intel(R) Celeron(R) N4020 @ 1.10GHz
 - **Arquitetura:** 32-bit, 64-bit
 - **RAM:** 4 GB
