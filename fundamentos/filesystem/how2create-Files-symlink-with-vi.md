@@ -29,6 +29,8 @@ ln -s file1 filelink
 ls -il file1 filelink
 ```
 Em seguida, aparecerá algo como:
+
+
 ![exemplo do ls -il](../imgs/symfile-result-ls-il.png "exemplo do ls -il")
 
 Podemos observar na linha do `file1`, ele tem primeiro caractere das permissões é -, indicando um arquivo regular (ex: -rw-r--r--). Já o `filelink` tem o primeiro caractere das permissões é l, indicando que é um link simbólico (ex: lrwxrwxrwx). O número do inode para `file1` e `filelink` são diferentes, confirmando que eles são arquivos distintos. O `filelink` aponta para `file1`(No final da coluna `filelink -> file1`), mas tem seu próprio número de inode, o que é característico dos links simbólicos.
