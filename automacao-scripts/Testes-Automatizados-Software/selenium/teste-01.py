@@ -8,6 +8,6 @@ driver = webdriver.Firefox(service=service)
 
 driver.get("https://www.google.com")
 
-time.sleep(5)
+#time.sleep()
 print(selenium.__version__)
 driver.quit()
