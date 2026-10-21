@@ -10,3 +10,6 @@ __pycache__/
 .venv/
 venv/
 env/
+
+# Variáveis de ambiente (não commitar secrets/caminhos locais)
+.env

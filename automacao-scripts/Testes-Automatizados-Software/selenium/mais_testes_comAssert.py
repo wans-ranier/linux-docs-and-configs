@@ -1,10 +1,12 @@
-import selenium
+import os
+from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 import time
 
-
-service = Service("/home/wans/Documentos/geckodriver-v0.37.1-linux64/geckodriver")
+load_dotenv()
+driver_path = os.environ.get('PATH_DRIVE_BROWSER')
+service = Service(driver_path)
 driver = webdriver.Firefox(service=service)
 
 driver.get("https://www.selenium.dev/")
