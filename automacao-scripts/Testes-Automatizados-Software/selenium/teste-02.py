@@ -1,8 +1,17 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 import time
+import os
+from dotenv import load_dotenv
 
-service = Service("/home/wans/Documentos/geckodriver-v0.37.1-linux64/geckodriver")
+# Carrega as variáveis do .env
+load_dotenv()
+
+# Recupera o caminho do driver a partir da variável de ambiente
+driver_path = os.environ.get('PATH_DRIVE_BROWSER')
+
+# Cria o Service com o caminho
+service = Service(driver_path)
 
 def test_selenium_navigationOnFireFox():
     driver = webdriver.Firefox(service=service)

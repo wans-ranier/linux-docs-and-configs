@@ -2,13 +2,25 @@
 __pycache__/
 *.py[cod]
 *$py.class
+/.pytest_cache
 
 # Pytest
 .pytest_cache/
 
-# Ambientes virtuais (se criar depois)
+# Ambientes virtuais (ignorar por completo em qualquer nível)
 .venv/
 venv/
 env/
+**/.venv/
+**/venv/
+
+# Variáveis de ambiente (não commitar secrets/caminhos locais)
+.env
+.env.local
+
+# Editor/IDE (ignorar por completo em qualquer nível)
 .vscode/
-.kilo
+**/.vscode/
+
+# Kilo
+.kilo/
