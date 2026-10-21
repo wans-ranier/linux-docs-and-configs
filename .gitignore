@@ -13,3 +13,4 @@ env/
 
 # Variáveis de ambiente (não commitar secrets/caminhos locais)
 .env
+.vscode/
